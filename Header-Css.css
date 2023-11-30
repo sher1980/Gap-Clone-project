@@ -140,12 +140,7 @@ p {
   margin-left: 24px;
 }
 
-/*@media (max-width: 685px) {
-  .logo {
-   display: none;
-  ;
-  }
-}*/
+
 
 .middle-Nav {
     background-color: lightgrey;
@@ -153,11 +148,12 @@ p {
     display: flex;
     justify-content: space-between;
 }
-/*@media (max-width: 685px) {
+
+@media (max-width: 685px) {
 .middle-Nav { 
       display: none;
     }   
- }*/
+ }
 
  
  .search {
