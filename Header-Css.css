@@ -18,9 +18,16 @@ body {
   height: 26px;
   /*width: 325px;*/
   flex: 1;
-  margin-right: 110px;
-  
+  margin-right: 110px;  
 }
+@media (max-width: 685px) {
+  .brands-section { 
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+      }   
+   }
+
 .brand-list {
   color: white;
   margin-left: 0;
@@ -31,6 +38,14 @@ body {
   white-space: nowrap;
 
 }
+
+@media (max-width: 685px) {
+  .brands-section { 
+   padding-left: 90px;
+      
+      }   
+   }
+
 
 /*.nav-bar {
   margin-left: 10px;
@@ -53,6 +68,13 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 685px) {
+  .nav-wrapper { 
+        display: none;
+      }   
+   }
+
+
 .sign-in {
   margin-left:4px ;
 }
@@ -65,10 +87,10 @@ body {
   font-size: 10px;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif; 
-  display: inline; 
-  
-    
+  display: inline;   
 }
+
+
 
 .vertical-line {
   border-left: 1px solid rgb(220, 220, 228);
@@ -86,14 +108,6 @@ body {
   cursor: pointer;
 }
 
-/*.shop-bag {
-  background-color: lightblue;
-}
-
-.shopping-bag {
-  color: white;
-  font-size:10px;
-} */
 
 .middle-header {
   background-color:black;
@@ -142,18 +156,14 @@ p {
 
 
 
+
 .middle-Nav {
     background-color: lightgrey;
     width: 600px;
     display: flex;
-    justify-content: space-between;
+   
 }
 
-@media (max-width: 685px) {
-.middle-Nav { 
-      display: none;
-    }   
- }
 
  
  .search {
@@ -173,6 +183,14 @@ p {
    outline: none; 
    
 }
+
+@media (max-width: 685px) {
+  .search { 
+       width: 100px;
+       margin-left: 0px;
+      }   
+   }
+  
 
 .search-button {
   width: 24px;
@@ -225,11 +243,11 @@ ul {
   justify-content: center;    
 }
 
-/*@media (max-width: 685px) {
+@media (max-width: 685px) {
   ul {
    display: none;
   }
-}*/
+}
 
 
 .links:hover {
@@ -238,19 +256,6 @@ ul {
   
 }
 
-/* For Mobile Below */
-
- .mobile-logo {
-  height: 35px;
-  display: flex;
-  margin-top: 18px;
-}
-
- /*@media (min-width: 684px) {
-  .mobile-logo {
-    display: none;
-  }
-}*/
 
 
 .search-section {
@@ -258,11 +263,12 @@ ul {
     display: flex;
     align-items: center;
 }
-/*@media (max-width: 685px) {
+@media (max-width: 685px) {
     .search-section {
-      display: none;
+      flex: 1;
+      padding-left: 80pxs;
      }
- }*/
+ }
 
  
 
