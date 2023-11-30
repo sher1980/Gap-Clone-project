@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First-page</title>
+  <link rel="stylesheet" href="Header-Css.css">
+  <link rel="stylesheet" href="General.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="Script.js"></script>
+    
+</head>
+<body>
+<div>
+  <Header>
+    <div class="top-header">
+      <div class="brands-section">
+        <ul>
+          <li class="brand-list">Gap</li>
+          <li class="brand-list">Old Navy</li>
+          <li class="brand-list">Banana Republic</li>
+          <li class="brand-list">Athleta</li>
+        </ul>
+      </div>
+      <div class="nav-Middle">
+        <p class="nav-wrapper">Free Shipping on 50+ for Reward Members <a class="sign-in" href="Form.html">SIGN IN OR JOIN</a></p>
+      </div>
+      <div class="shop-bag">
+        <span class="vertical-line"></span>
+        <i class="fa">&#xf290;</i>
+      </div> 
+    </div>
+    <div class="middle-header">
+      <div>
+        <p id="demo"></p>
+      </div>
+      <div>
+        <p class="Sale">Countdown until Christmas Sale!</p>
+      </div>
+       
+    </div>
+    <div class="Main-Nav">
+      <div class="left-Nav">
+        <img class="logo" src="Thumbnails/logo_gap--dark.svg">
+        <!--<img class="hamburger-icon" src="Icons/hamburger-menu.svg" alt="">
+        <img class="search-icon" src="Icons/search-icon.png" alt="">-->
+      </div>
+      <div class="middle-Nav">
+        <!--<img class="mobile-logo" src="Thumbnails/logo_gap--dark.svg" alt="">-->
+        <ul>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="Womens-page.html">WOMEN</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">MEN</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">GIRLS</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">BOYS</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li> 
+              <a class="links" href="">TODDLER</a>
+            </ll>
+          </div>
+          <div class="Main-links">
+            <li>
+               <a class="links" href="">BABY</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">MATERNITY</a>
+            </li> 
+          </div>
+          <div class="Main-links">
+            <li> 
+              <a class="links" href="">SALE</a>
+            </li>
+          </div>
+      
+        </ul>
+      </div>
+     
+      <div class="search-section">
+        <input class="search" type="text" placeholder="Search">
+        <button class="search-button"><img class="mainSearch-icon" src="Icons/search-icon.png" alt=""></button>
+       </div>
+    </div>
+    </Header>
+</div>
+<!--<div>
+  <img class="image" src="Thumbnails/HOL235875_img1_DESK.jpeg" alt="">
+</div>-->
+<!--For Carousel-->
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="Thumbnails/HOL235875_img1_DESK.jpeg" style="width:100%">
+  <img class="mySlides" src="Thumbnails/HOL235875_img2_DESK.jpeg" style="width:100%">
+  <img class="mySlides" src="Thumbnails/HOL235875_img3_DESK.jpeg" style="width:100%">
+</div>
+<div>
+  <p class="story-text">Our Softest Sweater. Ever.</p>
+</div>
+<div class="col1">
+  <h3 class="feature-text">Featured Poducts!</h3>
+</div>
+<div class="row">
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img class="blue-dress" src="Thumbnails/silver-dress.avif" alt="" >
+        </div>
+        <div class="col-3">
+          <img src="Thumbnails/Family-outfit.avif" alt="">
+        </div>
+        <div class="col-3">
+          <img src="Thumbnails/mens-wear.avif" alt="">
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+// For Carousel
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+ 
+</body>
+</html>

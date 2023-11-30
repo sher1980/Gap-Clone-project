@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Womens-page</title>
+  <link rel="stylesheet" href="Header-Css.css">
+  <link rel="stylesheet" href="General.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  *{
+    margin: 0;
+  }
+
+  h3 {
+    color: rgb(108, 107, 107);
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-bottom: 0px;
+
+  }
+  .sweater-text {
+    margin-bottom: 0;
+  }
+  .categories{
+    margin: 65px 0px;
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+  }
+  .col-3 {
+    flex: 33.33%;
+    padding: 10px; 
+  }
+  .col-3 img {
+   width: 100%;
+   margin-bottom: 0;
+  }
+
+  h4 {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+
+  /*.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }*/
+  .video {
+    display: flex;
+    justify-content: center;
+  }
+.price {
+  color: black;
+  margin-bottom: 0;
+  display: inline;
+}
+#player {
+  width: 50%;
+ 
+} 
+</style>  
+</head>
+
+<body>
+<div>
+  <Header>
+    <div class="top-header">
+      <div class="brands-section">
+        <ul>
+          <li class="brand-list">Gap</li>
+          <li class="brand-list">Old Navy</li>
+          <li class="brand-list">Banana Republic</li>
+          <li class="brand-list">Athleta</li>
+        </ul>
+      </div>
+      <div class="nav-Middle">
+        <p class="nav-wrapper">Free Shipping on 50+ for Reward Members <a class="sign-in" href="Form">SIGN IN OR JOIN</a></p>
+      </div>
+      <div class="shop-bag">
+        <span class="vertical-line"></span>
+        <i class="fa">&#xf290;</i>
+      </div> 
+    </div>
+    <div class="middle-header">
+      <p class="sale-bar">50% SALE LIMITED TIME</p>
+    </div>
+    <div class="Main-Nav">
+      <div class="left-Nav">
+        <img class="logo" src="Thumbnails/logo_gap--dark.svg">
+        <!--<img class="hamburger-icon" src="Icons/hamburger-menu.svg" alt="">
+        <img class="search-icon" src="Icons/search-icon.png" alt="">-->
+      </div>
+      <div class="middle-Nav">
+        <!--<img class="mobile-logo" src="Thumbnails/logo_gap--dark.svg" alt="">-->
+        <ul>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="Womens-page.html">WOMEN</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">MEN</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">GIRLS</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">BOYS</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li> 
+              <a class="links" href="">TODDLER</a>
+            </ll>
+          </div>
+          <div class="Main-links">
+            <li>
+               <a class="links" href="">BABY</a>
+            </li>
+          </div>
+          <div class="Main-links">
+            <li>
+              <a class="links" href="">MATERNITY</a>
+            </li> 
+          </div>
+          <div class="Main-links">
+            <li> 
+              <a class="links" href="">SALE</a>
+            </li>
+          </div>
+      
+        </ul>
+      </div>
+     
+      <div class="search-section">
+        <input class="search" type="text" placeholder="Search">
+        <button class="search-button"><img class="mainSearch-icon" src="Icons/search-icon.png" alt=""></button>
+       </div>
+    </div>
+    </Header>
+</div>
+<div class="Sweater-text">
+  <h3>SWEATERS NEW ARRIVALS</h3>
+</div>
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <img class="blue-dress" src="Thumbnails/Blue-sweater-dress.avif" alt="" >
+        <h4>Fair Isle Sweater Dress</h4>
+        <p class="price">$79.95</p>
+      </div>
+      <div class="col-3">
+        <img src="Thumbnails/Tan-sweater-dress.avif" alt="">
+        <h4>Stripe Mini Sweater Dress</h4>
+        <p class="price">$89.95</p>
+      </div>
+      <div class="col-3">
+        <img src="Thumbnails/Brown-dress.avif" alt="">
+        <h4>CashSoft Midi Sweater Dress</h4>
+        <p class="price">$89.95</p>
+      </div>
+    </div>
+  </div> 
+</div>
+<div class="video">
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+  function onYouTubeIframeAPIReady() {
+    // You can use the API here
+  }
+</script>
+
+<div id="player"></div>
+
+<script>
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: 'stGPvs0JSaw', 
+      playerVars: {
+        'autoplay': 0,
+        'controls': 0
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Do something when the player is ready
+  }
+
+  function onPlayerStateChange(event) {
+    // Do something when the player's state changes
+  }
+</script>
+</div>
+<!--<div>
+  <img class="image" src="Thumbnails/HOL235875_img1_DESK.jpeg" alt="">
+</div>-->
+
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <img class="blue-dress" src="Thumbnails/beige-dress.avif" alt="" >
+        <h4>Fair Isle Sweater Dress</h4>
+        <p class="price">$79.95</p>
+      </div>
+      <div class="col-3">
+        <img src="Thumbnails/top.avif" alt="">
+        <h4>Stripe Mini Sweater Dress</h4>
+        <p class="price">$89.95</p>
+      </div>
+      <div class="col-3">
+        <img src="Thumbnails/pants.avif" alt="">
+        <h4>CashSoft Midi Sweater Dress</h4>
+        <p class="price">$89.95</p>
+      </div>
+    </div>
+  </div>
+
+<div class="footer"></div>
+<script>
+
+</script>
+ 
+</body>
+</html>
