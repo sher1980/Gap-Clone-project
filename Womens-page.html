@@ -34,20 +34,40 @@
     margin: 65px 0px;
     width: 100%;
   }
+
   .row {
     display: flex;
     margin-left: 25px;
-    margin-right: 25px;
-    
+    margin-right: 25px;  
   }
-  .col-4 {
+
+  @media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;  
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .small-container {
+    padding: 0px;
+  }
+}
+
+  .col-3 {
     flex: 33.33%;
     padding: 10px; 
   }
+ 
+
+ 
   .col-3 img {
    width: 100%;
    margin-bottom: 0;
   }
+  
 
   h4 {
     font-weight: lighter;
@@ -59,6 +79,8 @@
     display: flex;
     justify-content: center;
   }
+
+
   .price {
     color: black;
     margin-bottom: 0;

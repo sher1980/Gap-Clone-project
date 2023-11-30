@@ -62,13 +62,13 @@ body {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 7px;
+  font-size: 8px;
   padding-top: 8px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-@media (max-width: 685px) {
+@media (max-width: 900px) {
   .nav-wrapper { 
         display: none;
       }   
