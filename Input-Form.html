@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Input with Error Validation</title>
+  <title>Input-Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -64,47 +64,6 @@
     <button class="button" onclick="validateForm()">Submit</button>
   </div>
 
-  <script>
-    function validateUsername() {
-      const usernameInput = document.getElementById('username');
-      const usernameError = document.getElementById('usernameError');
-
-      
-      if (usernameInput.value.length < 3) {
-        usernameError.textContent = 'Username must be at least 3 characters long';
-        usernameInput.classList.add('error');
-      } else {
-        usernameError.textContent = '';
-        usernameInput.classList.remove('error');
-      }
-    }
-
-    function validatePassword() {
-      const passwordInput = document.getElementById('password');
-      const passwordError = document.getElementById('passwordError');
-
-      
-      if (passwordInput.value.length < 6) {
-        passwordError.textContent = 'Password must be at least 6 characters long';
-        passwordInput.classList.add('error');
-      } else {
-        passwordError.textContent = '';
-        passwordInput.classList.remove('error');
-      }
-    }
-
-    function validateForm() {
-      validateUsername();
-      validatePassword();
-    
-    }
-
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-
-    usernameInput.addEventListener('input', validateUsername);
-    passwordInput.addEventListener('input', validatePassword);
-  </script>
-
+<script src="Input-Form.js" defer></script>
 </body>
 </html>
