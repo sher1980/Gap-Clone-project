@@ -24,17 +24,19 @@
 }
 .login-container {
   
-  width: 100vw;
-  background-size: cover;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
  }
- @media screen {
-  
- }
+ @media (max-width: 685px) {
+  .login-container { 
+   width: 50%;
+      }   
+   }
+
 .login-title {
   margin: 0;
   text-align: center;
@@ -56,23 +58,36 @@
 } 
 
 
-#name {
+
+
+/*#name {
+  
   width: 436px;
   padding: 8px;
 }
 #password {
   width: 436px;
   padding: 8px;
-}
+}*/
+
+/*@media (max-width: 685px) {
+  #name { 
+   width: 50%;
+  
+      }   
+   }*/
 .login-button {
+  color: white;
   padding: 10px 203px;
   margin-top: 20px;
   background-color: rgb(213, 30, 30);
   border: none;
   border-radius: 4px;
-  color: white;
+  cursor: pointer;
 }
-
+.login-button:hover {
+  background-color: rgb(157, 65, 65);
+}
 
 .pw {
   margin-top: 10px;
@@ -82,6 +97,18 @@
   color: red;
   font-size: 11px;
 }
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 685px) {
+  .inputs { 
+   width: 50%;
+  
+      }   
+   }
  </style>
 </head>
 <body>
@@ -91,17 +118,19 @@
     <img src="ba" alt="">
   </div>
   <div class="login-container">
-    <h1 class="login-title">Sign In | Join</h1>
-    <p class="enter-text">Enter your email to get started.</p>
+    <div>
+      <h1 class="login-title">Sign In | Join</h1>
+      <p class="enter-text">Enter your Name to get started.</p>
+    </div>
      <div id="error"></div>
      <form id="form" action="/" method="GET">
     <div class="input-group">
-      <label for="name" class="name-login">Email</label>
-      <input id="name" name="name" type="text">
+      <label for="name" class="name-login">Name</label>
+      <div class="inputs"><input id="name" name="name" type="text"></div>
     </div>
     <div class="input-group">
       <label for="password" class="pw">Password</label>
-      <input id="password" name="password" type="password">
+      <div class="inputs"><input id="password" name="password" type="password"></div>
     </div>
     <button type="login" class="login-button">Login</button>
    </form>
