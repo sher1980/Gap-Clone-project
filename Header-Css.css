@@ -13,6 +13,7 @@ body {
   flex-direction: row;
   align-items: center;  
 }
+
 .brands-section {
   background-color: 47,47,49;
   height: 26px;
@@ -36,7 +37,6 @@ body {
   justify-items: center;
   padding-right: 18px;
   white-space: nowrap;
-
 }
 
 @media (max-width: 685px) {
@@ -45,7 +45,6 @@ body {
       
       }   
    }
-
 
 .nav-Middle {
   background-color: 47,47,49 ;
@@ -74,11 +73,6 @@ body {
   margin-left:4px ;
 }
 
-.shop-cart {
-  background-color: aqua;
-  height: 26px;
-}
-
 .nav-logo-bar {
   font-size: 10px;
   color: white;
@@ -100,6 +94,7 @@ body {
 
 .fa:hover {
   cursor: pointer;
+  color: white;
 }
 
 .middle-header {
@@ -142,12 +137,23 @@ p {
   margin-left: 24px;
 }
 
+@media (max-width: 685px) {
+  .logo { 
+       display: none;
+      }   
+   }
+
 .middle-Nav {
     background-color: lightgrey;
-    width: 600px;
-    display: flex;
-   
+    width: 620px;
+    display: flex;   
 }
+
+@media (max-width: 685px) {
+  .middle-Nav { 
+       background-color: white;
+      }   
+   }
  
 .search {
   font-size: 10px;
@@ -248,16 +254,28 @@ ul {
      }
  }
 
-/*.hamburger-icon {
+ .mobile-logo {
+  height: 35px;
+  display: flex;
+  margin-top: 10px;
+}
+
+ @media (min-width: 684px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+.hamburger-icon {
   height: 22px; 
-  margin-left: 15px;   
+  margin-left: 5px;   
 }
 
  @media (min-width: 684px) {
   .hamburger-icon {
     display: none;
   }
-}*/
+}
 
 .search-icon {
  height: 17px;
