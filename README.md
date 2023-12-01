@@ -20,6 +20,11 @@ To run locally:
 
 How to get around the site?
 
+Three pages:
+First-page.html
+Womens-page.html
+Input-Form.html
+
 The “Women” link will take you to the “Women’s-page. The embedded YouTube video can  be played for your enjoyment or paused if you prefer quiet, it’s your choice.   
 
 “The Sign in/ Login” link will take you to the “Input-form” page.  You should get an error message if the user name is less than three letters and less than 6 characters for the password.
