@@ -20,10 +20,10 @@ To run locally:
 
 How to get around the site?
 
-Three pages:
-First-page.html
-Womens-page.html
-Input-Form.html
+#Three pages:
+1. First-page.html
+2. Womens-page.html
+3. Input-Form.html
 
 The “Women” link will take you to the “Women’s-page. The embedded YouTube video can  be played for your enjoyment or paused if you prefer quiet, it’s your choice.   
 
