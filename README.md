@@ -35,7 +35,7 @@ All page are mobile friendly.
  
 Retrieve data from a third-party API and use to display within app: I embedded a Youtube API into the women’s section of my app. The user will be able to play and pause the video.
 
-Calculate and display data based on external factor:  I integrated a count-down clock using JavaScript. The count-down clock displays days, hours, minutes and seconds till Christmas. 
+Calculate and display data based on external factor:  I integrated a count-down clock using JavaScript. The count-down clock displays days, hours, minutes and seconds till the Solar New Year. 
 
 Use a regular expression to validate user input: I created a form that prevents the user from entering a password that this less than 6 characters; and that also return errors when the name and email isn’t provide by the user. 
 
